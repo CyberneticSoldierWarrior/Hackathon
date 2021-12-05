@@ -9,9 +9,7 @@
     -->
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
-        tools:ignore="CoarseFineLocation" />
-
-    <!-- Se agregan permisos para establecer conexiones -->
+        tools:ignore="CoarseFineLocation" /> <!-- Se agregan permisos para establecer conexiones -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -22,6 +20,9 @@
         android:roundIcon="@mipmap/ic_zonas_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZonaS">
+        <activity
+            android:name=".Vista.Condiciones"
+            android:exported="false" />
         <activity
             android:name=".Controlador.MapsActivity"
             android:exported="false" />
