@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.ResetPasswordActivity"
+    android:orientation="vertical"
+    android:background="@drawable/iconback2"
+    >
+
+    <TextView
+
+        android:id="@+id/Reporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reporte Estado de Zona"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_margin="10dp"
+        tools:context=".Controlador.MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txt_latitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="latitud"
+            android:textColor="@color/primaryTextColor"
+            />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_longitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="longitud"
+            android:textColor="@color/primaryTextColor"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_envpass"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:text="Enviar"
+        app:icon="@drawable/alarma_azul"
+        android:backgroundTint="@color/secondaryBotonColor"
+        />
+
+</LinearLayout>

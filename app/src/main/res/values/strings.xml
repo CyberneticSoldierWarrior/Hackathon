@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Zona Segura</string>
+    <string name="title_activity_maps">Zona Segura</string>
+    <string name="hint_Usuario">Usuario</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">login</string>
+    <string name="button_resetpass">RESET PASSWORD</string>
+    <string name="rest_pass">¿ Reset Password ?</string>
+    <string name="txt_resetpassemail">Ingresa el correo electrónico asociado a la cuenta,
+    te enviaremos las intrucciones para restablecer la contraseña.
+    </string>
+    <string name="button_Reportar">Reportar</string>
+    <string name="registro">registrar</string>
+    <string name="SpinnerTipo">Tipo de Movilidad</string>
+
+
+    <!--ListaNo.1 Tipo de Movilidad -->
+
+    <string-array name="moveTypeList">
+        <item>Tipo de Movilidad usada</item>
+        <item>1. Bicicleta</item>
+        <item>2. Caminar</item>
+        <item>3. Monopatín</item>
+    </string-array>
+
+
+</resources>
