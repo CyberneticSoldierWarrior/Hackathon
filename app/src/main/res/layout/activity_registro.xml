@@ -74,6 +74,7 @@
         android:textColor="@color/primaryTextColor" />
 
     <Button
+        android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="50dp"

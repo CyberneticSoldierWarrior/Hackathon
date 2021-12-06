@@ -13,8 +13,8 @@ import usa.salamanca.zonas.Modelo.User;
 
 public class ControladorModelo {
 
-    public List<Categoria> getUsuarios(JSONArray categoria) throws JSONException {
-        List<Categoria> categoriaList = new ArrayList<>();
+    public ArrayList<Categoria> getCategoria(JSONArray categoria) throws JSONException {
+        ArrayList<Categoria> categoriaList = new ArrayList<Categoria>();
         if(categoria != null && categoria.length() > 0){
             for(int i = 0; i < categoria.length(); i++){
                 Categoria nuevo  = new Categoria();
@@ -26,8 +26,8 @@ public class ControladorModelo {
         return categoriaList;
     }
 
-    public List<Etiqueta> getEtiqueta(JSONArray etiqueta) throws JSONException{
-        List<Etiqueta> etiquetaList = new ArrayList<>();
+    public ArrayList<Etiqueta> getEtiqueta(JSONArray etiqueta) throws JSONException{
+        ArrayList<Etiqueta> etiquetaList = new ArrayList<>();
         if(etiqueta != null && etiqueta.length() > 0){
             for(int i = 0; i < etiqueta.length(); i++){
                 Etiqueta nuevo  = new Etiqueta();
