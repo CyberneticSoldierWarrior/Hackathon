@@ -10,6 +10,6 @@ public class Categoria {
 
     public String getNombrecat(){ return this.nombrecat; }
 
-    public void setNombrecat(){ this.nombrecat = nombrecat; }
+    public void setNombrecat(String nombrecat){ this.nombrecat = nombrecat; }
 
 }
