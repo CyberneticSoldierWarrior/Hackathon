@@ -1,0 +1,58 @@
+MANEJO DE CATEGORIAS
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/categorias/categoria
+
+GET (Obtiene todas)
+POST (Crea una nueva ) Body {"nombrecat" : "Nombre de la nueva categoría"}
+PUT (Actualiza una categoría) {"id": n, "nombrecat" : "Nombre nuevo de la categoría"}
+
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/categorias/categoria/:id
+GET (Obtiene una específica ) :id = n
+
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+MANEJO DE ETIQUETAS
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/etiquetas/etiquetas
+
+GET (Obtiene todas)
+POST (Crea una nueva ) Body {"etiqueta" : "Nombre de la nueva etiqueta"}
+PUT (Actualiza una categoría) {"id": n, "etiqueta" : "Nombre nuevo de la etiqueta"}
+
+
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/etiquetas/etiqueta/:id
+GET (Obtiene una específica ) :id = n
+
+ALGUNAS ETIQUETAS
+[{ "id": 1, "etiqueta": "Ladrones en la vía"},
+{ "id": 4, "etiqueta": "Pavimento irregular"},
+{"id": 5,"etiqueta": "Piedras en el camino"},
+{"id": 3,"etiqueta": "Huecos en la vía"}]
+
+OTRAS ETIQUETAS QUE PERMITAN MONETIZAR LA APP
+
+{"id": 8,"etiqueta": "Restaurante"},
+{"id": 9,"etiqueta": "Restaurante Callejero"},
+{"id": 7,"etiqueta": "Hotel"}, etc
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+MANEJO DE GEODATA
+
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/geodata/zona
+GET (Obtiene todas dentro de una zona) Body {"longinit" : n.nnnnn, "longend" : n.nnnnn, "latinit" : n.nnnnn, "latend" : n.nnnnn }
+POST (Crea una nueva ) Body { "usuario_id" : userid , "latitud" : n.nnnnn, "longitud" : n.nnnnn, "etiqueta_id" : etiqueta_id , "address_line" : addressLine}
+DELETE (Borra una específica) {"id": n }
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+MANEJO DE USUARIOS
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/api/usuarios/usuarios
+
+GET (Obtiene todos los Usuarios) Sólo estos campos {id, firstname, lastname, age, movetype}
+POST (Crea un nuevo Usuario ) Body { "firstname" : "firstname", "lastname" : "lastname", "age" : age, "movetype" : movetype, "email" : "email", "clave" : "clave"}
+DELETE (Borra un usuario específico) {"id": n }
+
+
+https://g89c5192027b183-zonasdata.adb.us-sanjose-1.oraclecloudapps.com/ords/admin/api/usuarios/:email
+GET (Obtiene el Usuario con email)
+
+dd9d67b371519c339ed8dbd25af90e976a1eeefd4ad3d889005e532fc5bef04d
+
